@@ -1,5 +1,10 @@
 package com.dsa.DS;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class QueueImpl {
 
   public static void main(String[] args) {
@@ -15,5 +20,7 @@ public class QueueImpl {
     queue.remove();
 
     queue.display();
+
+    Queue<Integer> integerQueue = new ArrayDeque<>();
   }
 }

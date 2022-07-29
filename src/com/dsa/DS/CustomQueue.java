@@ -16,11 +16,15 @@ class CustomQueue {
 
     public void add(int val) {
         if (isFull()) {
-            int[] temp = new int[2 * array.length + 1];
-            System.arraycopy(array, 0, temp, 0, array.length);
-            array = temp;
+            doubleSize();
         }
         array[end++] = val;
+    }
+
+    private void doubleSize() {
+        int[] temp = new int[2 * array.length + 1];
+        System.arraycopy(array, 0, temp, 0, array.length);
+        array = temp;
     }
 
     public int remove() {
@@ -39,7 +43,7 @@ class CustomQueue {
         if (isEmpty()) {
             throw new RuntimeException("cannot peek from empty queue!");
         }
-        return array[end-1];
+        return array[0];
     }
 
     public void display() {
