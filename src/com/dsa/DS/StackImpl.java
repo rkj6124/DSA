@@ -1,3 +1,7 @@
+package com.dsa.DS;
+
+import java.util.Stack;
+
 class StackImpl {
 
     public static void main (String[] args) {
@@ -17,5 +21,7 @@ class StackImpl {
 
         System.out.println("Display : ");
         stack.display();
+
+        Stack<Integer> integerStack = new Stack<>();
     }
 }

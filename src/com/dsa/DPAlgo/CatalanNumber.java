@@ -1,4 +1,4 @@
-package java.main.DPAlgo;
+package com.dsa.DPAlgo;
 
 import java.util.ArrayList;
 
@@ -13,7 +13,7 @@ public class CatalanNumber {
         ArrayList<ArrayList<Integer>> catalan = new ArrayList<>();
         if (n < 2) return 1;
         for (int i = 0; i < n; i++) {
-            catalan.
+//            catalan.
         }
         return 0;
     }

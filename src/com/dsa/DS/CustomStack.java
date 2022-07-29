@@ -1,8 +1,10 @@
+package com.dsa.DS;
+
 class CustomStack {
 
-    private int[] array;
+    protected int[] array;
     private int size;
-    private static int DEFAULT_CAPACITY = 10;
+    private static final int DEFAULT_CAPACITY = 10;
 
     public CustomStack() {
        this.array = new int[DEFAULT_CAPACITY];
