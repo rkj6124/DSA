@@ -1,7 +1,5 @@
 package com.dsa.DPAlgo;
 
-import java.util.ArrayList;
-
 public class CatalanNumber {
 
     public static void main(String[] args) {
