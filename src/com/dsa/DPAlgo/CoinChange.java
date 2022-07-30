@@ -40,6 +40,16 @@ public class CoinChange {
     System.out.println(output);
   }
 
+  /**
+   * @param coins list of denominations of coin
+   * @param amount the amount sum we need to get using minimum number of coins
+   * <br>
+   * bottom-up approach <br>
+   * <b>TimeComplexity:</b> O(amount * len(coins))<br>
+   * <b>SpaceComplexity:</b> O(amount)
+   *
+   * @return min number of coins required to get to amount, return -1 if not possible
+   */
   // bottom-up approach
   private static int coinChange(int[] coins, int amount) {
     int[] dp = new int[amount + 1];
